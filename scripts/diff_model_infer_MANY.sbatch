@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #SBATCH --job-name=mr-brain-generation
 #SBATCH --partition=main
+#SBATCH --account=training
 #SBATCH --output=logs/%x-%j.out
 #SBATCH --error=logs/%x-%j.err
 #SBATCH --nodes=1
@@ -9,11 +10,6 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=64G
 #SBATCH --time=04:00:00
-#
-# Cluster-specific Slurm settings to review before submitting:
-#   - Add or edit #SBATCH --partition=<partition_name> if your cluster requires it.
-#   - Add or edit #SBATCH --account=<account_name> if your cluster requires it.
-#   - Increase --time, --mem, --cpus-per-task, or --gres=gpu:N for larger volumes.
 #
 # This script calls scripts.diff_model_infer_MANY, which loads the model once
 # and generates multiple images sequentially via --num_images.

@@ -1,6 +1,6 @@
 {
-    "num_images": 1,
-    "output_dir": "./output/mr_brain",
+    "num_images": 100,
+    "output_dir": "/data/luka.secerovic/synthetic_mri/mr_brain",
     "diffusion_unet_train": {
         "batch_size": 1,
         "cache_rate": 0,
