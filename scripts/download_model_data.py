@@ -57,6 +57,11 @@ def fetch_to_hf_path_cmd(
                 print(f"Warning: failed to fetch config.json for tracking from {repo_id}: {e}")
             tracked_repos.add(repo_id)
 
+        if dst.exists():
+            print(f"Model/data file already exists: {dst}")
+        else:
+            print(f"Model/data file does not exist, downloading: {dst}")
+
         if dst.exists() and not overwrite:
             saved.append(str(dst))
             continue
