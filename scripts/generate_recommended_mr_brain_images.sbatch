@@ -19,7 +19,7 @@ set -euo pipefail
 cd "${SLURM_SUBMIT_DIR:-$(pwd)}"
 mkdir -p logs
 
-CONFIG="${1:-configs/config_generate_mr_brain_recommended.json}"
+CONFIG="${1:-configs/config_generate_mr_brain_default_fov_256_128.json}"
 ENV_TEMPLATE="configs/environment_maisi_diff_model_rflow-mr-brain.json"
 MODEL_DEF="configs/config_network_rflow.json"
 GENERATE_VERSION="rflow-mr-brain"

@@ -4,7 +4,7 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
-CONFIG="configs/config_generate_mr_brain_recommended.json"
+CONFIG="configs/config_generate_mr_brain_default_fov_256_128.json"
 SBATCH_SCRIPT="scripts/generate_recommended_mr_brain_images.sbatch"
 MAX_CONCURRENT=8
 DRY_RUN=0
