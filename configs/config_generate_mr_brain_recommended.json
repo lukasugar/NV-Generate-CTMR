@@ -1,6 +1,6 @@
 {
     "num_images": 100,
-    "output_dir": "/data/luka.secerovic/synthetic_mri/mr_brain/recommended",
+    "output_dir": "/data/luka.secerovic/synthetic_mri/mr_brain/default_fov_256_128",
     "diffusion_unet_train": {
         "batch_size": 1,
         "cache_rate": 0,
